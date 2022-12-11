@@ -1,0 +1,16 @@
+algorithme checkpoint;
+var t: table[20] de caractere;
+s1,s2,i,n:entier;
+debut
+s1=1 //la liste contient au moins un mot ou sinon un point qui va etre considerer un "mot"
+s2=0
+repeter lire(t); n=lenght(t) jusqu'a  t[n]='.';
+pour i de 1 a n faire 
+si t[i]=' ' alors 
+s1=s+1 /// puisque entre chaque mot y'a un seul espace , on compte les espaces qui separent
+finsi 
+si t[i]='a' ou t[i]='A' ou t[i]='e' ou t[i]='E' ou t[i]='o' ou t[i]='O' ou t[i]='u' ou t[i]='U' ou t[i]='y' ou t[i]='Y' alors
+s2=s2+1;
+finpour 
+ecrire("le nombre de mots est :",s):
+fin.
